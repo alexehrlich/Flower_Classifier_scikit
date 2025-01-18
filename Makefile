@@ -13,6 +13,10 @@ FNN:
 	@. ./venv/bin/activate && \
 	python3 FNN.py
 
+KMEAN:
+	@. ./venv/bin/activate && \
+	python3 KMEAN.py
+
 
 fclean:
 	@rm -rf ./venv

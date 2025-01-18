@@ -108,7 +108,6 @@ def main():
     train(model, train_loader, device, epochs=100, learning_rate=0.01)
 
     evaluate(model, device, test_loader)
-    
 
 if __name__ == '__main__':
     main()
