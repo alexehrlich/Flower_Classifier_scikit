@@ -1,4 +1,4 @@
-all: setup run
+all: setup
 
 setup:
 	@python3 -m venv venv && \
