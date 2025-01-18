@@ -1,5 +1,8 @@
 import numpy as np
 import pandas as pd
+import matplotlib
+import matplotlib
+matplotlib.use('Qt5Agg')
 import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -19,12 +22,11 @@ def main():
     # target is the target vector matching the feature matrix 
     df['species'] = pd.Categorical.from_codes(iris_dataset.target, iris_dataset.target_names)
 
+    print(df.head())
 
     #Split the Data into training and test data
     X = iris_dataset.data
     y = iris_dataset.target
-
-    print(y)
 
     #Standardize the data for better convergence
     scaler = StandardScaler()
@@ -39,7 +41,6 @@ def main():
     # With that we access only the target we want.
     plt.figure(figsize=(8, 6))
     for i, target_name in enumerate(iris_dataset.target_names):
-        print(y==i)
         plt.scatter(X_pca[y == i, 0], X_pca[y == i, 1], label=target_name)
     plt.xlabel('Principal Component 1')
     plt.ylabel('Principal Component 2')
