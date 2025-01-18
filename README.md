@@ -1,4 +1,4 @@
-### IRIS
+# IRIS
 
 In this simple demo I use the IRIS data set to explore Pytorch and Scikit-learn
 
