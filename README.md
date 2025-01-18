@@ -9,6 +9,6 @@ Makes PCA to reduse the 4 dimensional input vecor [sepal width, sepal length, pe
 Trains a model with one hidden layer. Moves the tensors to the GPU for faster execution. 
 
 ## Usage
-- `make setup`to install the libaries
-- `make KNN`to run the K Nearest Neighbor Classification+
+- `make setup`to install the dependencies
+- `make KNN`to run the K Nearest Neighbor Classification
 - `make FNN` to train a fully connected Feed Forward Neural Network
