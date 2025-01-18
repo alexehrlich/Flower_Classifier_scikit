@@ -1,18 +1,18 @@
 # IRIS
 
-In this simple demo I use the IRIS data set to explore Pytorch and Scikit-learn
+In this simple demo I use the IRIS data set to explore Pytorch and Scikit-learn.
 
 ## KNearestNeighbor
-Makes PCA to reduse the 4 dimensional input vecor [sepal width, sepal length, petal width, petal length] to a 2 dimensional vector using PCA to make a scatter plot to easily make the clusters visible.
+Uses PCA to reduse the 4 dimensional input vecor [sepal width, sepal length, petal width, petal length] to a 2 dimensional vector using PCA to make a scatter plot to easily make the clusters visible.
 
 ## Feed Forward Neural Network
 Trains a model with one hidden layer. Moves the tensors to the GPU for faster execution.
 
 ## Kmeans
 Although IRIS is labeled data we can use it to explore Kmeans and pretend it as unlabeled
-data. This is done here. We look at the scatter plots between all four features, we reduce it to 2 dimensions to plot it and in the end we evaluate it with the confusion matrix.
+data. We look at the scatter plots between all four features, we reduce it to 2 dimensions with PCA to plot it and in the end we evaluate it with the confusion matrix.
 
-The learning here is, that the result highly depends on the random_sate where the cluster centroids are set in  the beginning.
+The biggest learning here is, that the result highly depends on the random_sate where the cluster centroids are set in  the beginning.
 
 
 ## Usage
