@@ -16,5 +16,4 @@ FNN:
 
 fclean:
 	@rm -rf ./venv
-	@rm -f merged_mission_count_years.csv
 	
